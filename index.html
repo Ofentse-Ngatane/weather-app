@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Forcast</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="src/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-app" img src= "cloud.jpg" />
+        <form class="search-form" id="search-form">
+          <div class="row">
+            <div class="col-6">
+              <input
+                type="search"
+                placeholder="Enter city"
+                autofocus="on"
+                autocomplete="off"
+                id="city-input"
+                class="form-control shadow-sm"
+              />
+            </div>
+            <div class="col-3">
+              <input
+                type="submit"
+                value="Search"
+                class="form-control btn btn-primary shadow-sm"
+              />
+            </div>
+            <div class="col-3">
+                <button class="btn btn-success w-100" id="currentLocationButton">
+                    Current
+                  </button>
+            </div>
+          </div>
+        </form>
+        <h1 id="city">
+          Johannesburg
+        </h1>
+        <h2 id="date">
+          Friday 16:20
+        </h2>
+        <h3 id="description">
+          Partly Cloudy
+        </h3>
+        <span class="temperature" id="temperature">⛅️19 </span>
+        <span class="units"> °C </span>
+        <ul class="precipitation">
+          <li>Humidity: <span id="humidity"></span> % </li> 
+          <li>Wind:<span id="wind"></span> km/h</li> 
+        </ul>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <p class="day">Sat</p>
+              <p class="emoji">⛅️</p>
+              <p class="temp">24° 10°</p>
+            </div>
+
+            <div class="col">
+              <p class="day">Sun</p>
+              <p class="emoji">⛅️</p>
+              <p class="temp">24° 11°</p>
+            </div>
+
+            <div class="col">
+              <p class="day">Mon</p>
+              <p class="emoji">☀️</p>
+              <p class="temp">26° 13°</p>
+            </div>
+
+            <div class="col">
+              <p class="day">Tue</p>
+              <p class="emoji">☀️</p>
+              <p class="temp">27° 14°</p>
+            </div>
+            <div class="col">
+              <p class="day">Wed</p>
+              <p class="emoji">☀️</p>
+              <p class="temp">27° 15°</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
