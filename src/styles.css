@@ -4,6 +4,7 @@
   margin: 20px auto;
   border-radius: 10px;
   max-width: 600px;
+  color: gray;
 }
 h1,
 h2 {
@@ -40,6 +41,7 @@ h3 {
   font-weight: 400;
   list-style: none;
   font-family: "Courier New", Courier, monospace;
+  color: gray;
 }
 .search-form {
   margin-bottom: 20px;
