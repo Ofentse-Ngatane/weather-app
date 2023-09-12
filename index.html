@@ -11,12 +11,11 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="src/styles.css" />
-    <script src="src/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
   </head>
   <body>
     <div class="container">
-      <div class="weather-app" img src= "cloud.jpg" />
+      <div class="weather-app">
         <form class="search-form" id="search-form">
           <div class="row">
             <div class="col-6">
@@ -37,26 +36,20 @@
               />
             </div>
             <div class="col-3">
-                <button class="btn btn-success w-100" id="currentLocationButton">
-                    Current
-                  </button>
+              <button class="btn btn-success w-100" id="currentLocationButton">
+                Current
+              </button>
             </div>
           </div>
         </form>
-        <h1 id="city">
-          Johannesburg
-        </h1>
-        <h2 id="date">
-          Friday 16:20
-        </h2>
-        <h3 id="description">
-          Partly Cloudy
-        </h3>
+        <h1 id="city">Johannesburg</h1>
+        <h2 id="date">Friday 16:20</h2>
+        <h3 id="description">Partly Cloudy</h3>
         <span class="temperature" id="temperature">⛅️19 </span>
         <span class="units"> °C </span>
         <ul class="precipitation">
-          <li>Humidity: <span id="humidity"></span> % </li> 
-          <li>Wind:<span id="wind"></span> km/h</li> 
+          <li>Humidity: <span id="humidity"></span> %</li>
+          <li>Wind:<span id="wind"></span> km/h</li>
         </ul>
         <div class="container">
           <div class="row">
@@ -90,7 +83,15 @@
             </div>
           </div>
         </div>
+        <small>
+          <a
+            href="https://github.com/Ofentse-Ngatane/weather-app"
+            target="_blank"
+            >Open-source code</a
+          >
+        </small>
       </div>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
